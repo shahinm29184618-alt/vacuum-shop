@@ -1,0 +1,182 @@
+﻿
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+header {
+  background-color: #34495e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f39c12;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.product {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 50%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.product p {
+  font-size: 14px;
+  color: #666;
+}
+
+.price {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #219150;
+}
+
+footer {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* واکنش‌گرایی برای موبایل */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+  }
+}
+.contact-info {
+  margin-top: 40px;
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.contact-info p {
+  font-size: 15px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.contact-info i {
+  margin-left: 8px;
+  color: #2980b9;
+}
+
+.map iframe {
+  border-radius: 8px;
+  margin-top: 10px;
+
+}
+.logo {
+  width: 120px;
+  height: auto;
+  margin-left: 10px;
+  vertical-align: middle;
+  filter: drop-shadow(0 0 4px rgba(255,255,255,0.4));
+}
+
+header {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+footer {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.contact-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #2980b9;
+  color: white;
+  font-size: 24px;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-icon:hover {
+  background-color: #3498db;
+}
